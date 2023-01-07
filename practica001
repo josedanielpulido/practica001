@@ -1,0 +1,12 @@
+def ejercicio(n,p,exponente==1): //Definimos las variables a usar
+  if n==0:    //empezamos el n en cero
+    k = p-p     //empezamos k de igual manera en cero
+  else:
+    k=(p*exponente)+ ejercicio(n-1,p,exponente+1)  // colocamos la operacion a realizar de manera revursiva
+  return k        // Finalmente imprimimos el resultado recursivo.
+p=int(input("Ingrese un numero p: "))
+n=int(input("Ingrese un numero n: "))
+
+print(ejercicio(n,p))    //llamamos a impresion nuevamente.
+
+
